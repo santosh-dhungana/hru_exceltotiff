@@ -1,11 +1,13 @@
+#!@ Santosh Dhungana
+
+# imports
 import arcpy, os, sys, glob
 from arcpy.conversion import ExcelToTable, TableToTable, FeatureToRaster
 from arcpy.management import AddJoin, RemoveJoin, Delete, SelectLayerByAttribute, MakeFeatureLayer, BuildRasterAttributeTable, CompositeBands, MakeTableView
 from arcpy import GetParameterAsText as gp
 
 
-# read table and make temporaty layer
-
+# read excel table and make temporary layer
 
 in_table= gp(0)
 in_sheet=gp(1)
